@@ -23,6 +23,11 @@ function updateScore(result) {
   result === "player wins" ? increasePlayerScore() : increasePcScore();
 }
 
+function resetScore() {
+  playerScore = 0;
+  pcScore = 0;
+}
+
 function playRound(playerSelection, computerSelection) {
   let playerChoice = playerSelection.toLowerCase();
   let pcChoice = computerSelection.toLowerCase();
@@ -68,9 +73,5 @@ function game() {
   }
 
   console.log(`Final result: Player ${playerScore} - PC ${pcScore}`);
-
-  playerScore = 0;
-  pcScore = 0;
+  resetScore();
 }
-
-game();
