@@ -68,6 +68,9 @@ function game() {
   }
 
   console.log(`Final result: Player ${playerScore} - PC ${pcScore}`);
+
+  playerScore = 0;
+  pcScore = 0;
 }
 
 game();
