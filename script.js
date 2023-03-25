@@ -92,7 +92,10 @@ function checkResult() {
 }
 
 function playGame(e) {
-  const result = playRound(this.innerText, getComputerChoice());
+  const result = playRound(
+    this.getAttribute("data-game-option"),
+    getComputerChoice()
+  );
   updateTexts(result);
   checkResult();
 }
