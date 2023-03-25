@@ -5,11 +5,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <title>Rock Paper and Scissors</title>
+  <script src="https://kit.fontawesome.com/0429980843.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
+  <header class="bg-indigo text-center">
+    <h1>This is the classic Rock, Paper &amp; Scissors!</h1>
+  </header>
+  <main class="bg-indigo full-size centralized-container">
+    <div class="game-container">
+      <button class="button button-rock"><i class="fa-solid fa-hand-back-fist fa-2xl"></i></button>
+      <button class="button button-paper"><i class="fa-solid fa-hand fa-2xl"></i></button>
+      <button class="button button-scissors"><i class="fa-solid fa-hand-scissors fa-2xl"></i></button>
+    </div>
+    <div class="result-container text-center">
+      <h2>Result:</h2>
+      <p class="round-result "></p>
+      <p class="game-results "><span class="player-result"></span> X <span class="pc-result"></span></p>
+    </div>
+  </main>
+  <footer class="footer">
+    Work in progress - Made by <a href="https://github.com/jvkf" target="_blank">Jota</a>
+  </footer>
 </body>
 <script src="script.js"></script>
 
